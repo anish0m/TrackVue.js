@@ -5,6 +5,7 @@ import vBind from './components/VBind.vue'
 import vModel from './components/VModel.vue'
 import vCondition from './components/VConditions.vue'
 import vFor from './components/VFor.vue'
+import vOn from './components/VOn.vue'
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import vFor from './components/VFor.vue'
   <vModel message />
   <vCondition />
   <vFor />
+  <vOn />
 
 </template>
 
