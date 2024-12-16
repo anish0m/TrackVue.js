@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import directiveUsage from './components/DirectiveUsage.vue'
 import vBind from './components/VBind.vue'
 import vModel from './components/VModel.vue'
+import vCondition from './components/VConditions.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import vModel from './components/VModel.vue'
   <directiveUsage message />
   <vBind />
   <vModel message />
+  <vCondition />
 
 </template>
 
