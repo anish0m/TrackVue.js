@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import directiveUsage from './components/DirectiveUsage.vue'
 import vBind from './components/VBind.vue'
+import vModel from './components/VModel.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import vBind from './components/VBind.vue'
   <HelloWorld msg="Vite + Vue" />
   <directiveUsage message />
   <vBind />
+  <vModel message />
 
 </template>
 
