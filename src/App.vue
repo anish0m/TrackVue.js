@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import directiveUsage from './components/DirectiveUsage.vue'
+import vBind from './components/VBind.vue'
 </script>
 
 <template>
@@ -14,6 +15,8 @@ import directiveUsage from './components/DirectiveUsage.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
   <directiveUsage message />
+  <vBind />
+
 </template>
 
 <style scoped>
