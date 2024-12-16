@@ -4,6 +4,7 @@ import directiveUsage from './components/DirectiveUsage.vue'
 import vBind from './components/VBind.vue'
 import vModel from './components/VModel.vue'
 import vCondition from './components/VConditions.vue'
+import vFor from './components/VFor.vue'
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import vCondition from './components/VConditions.vue'
   <vBind />
   <vModel message />
   <vCondition />
+  <vFor />
 
 </template>
 
