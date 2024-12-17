@@ -8,6 +8,7 @@ import vFor from './components/VFor.vue'
 import vOn from './components/VOn.vue'
 import cref from './components/Ref.vue'
 import creactive from './components/Reactive.vue'
+import ccomputed from './components/Computed.vue'
 </script>
 
 <template>
@@ -28,6 +29,7 @@ import creactive from './components/Reactive.vue'
   <vOn />
   <cref />
   <creactive />
+  <ccomputed />
 
 </template>
 
