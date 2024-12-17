@@ -14,5 +14,7 @@ const numberInput = ref(0)
 </template>
 
 <style scoped>
-/* Add your styles here if needed */
+.read-the-docs {
+    color: #888;
+}
 </style>

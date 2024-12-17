@@ -6,6 +6,7 @@ import vModel from './components/VModel.vue'
 import vCondition from './components/VConditions.vue'
 import vFor from './components/VFor.vue'
 import vOn from './components/VOn.vue'
+import cref from './components/Ref.vue'
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import vOn from './components/VOn.vue'
   <vCondition />
   <vFor />
   <vOn />
+  <cref />
 
 </template>
 
