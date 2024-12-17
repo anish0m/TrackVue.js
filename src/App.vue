@@ -7,6 +7,7 @@ import vCondition from './components/VConditions.vue'
 import vFor from './components/VFor.vue'
 import vOn from './components/VOn.vue'
 import cref from './components/Ref.vue'
+import creactive from './components/Reactive.vue'
 </script>
 
 <template>
@@ -26,6 +27,7 @@ import cref from './components/Ref.vue'
   <vFor />
   <vOn />
   <cref />
+  <creactive />
 
 </template>
 

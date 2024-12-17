@@ -20,7 +20,3 @@ const changeMessage = () => {
     color: #888;
 }
 </style>
-
-
-
-
