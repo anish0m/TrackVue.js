@@ -9,6 +9,7 @@ import vOn from './components/VOn.vue'
 import cref from './components/Ref.vue'
 import creactive from './components/Reactive.vue'
 import ccomputed from './components/Computed.vue'
+import cwatch from './components/Watch.vue'
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import ccomputed from './components/Computed.vue'
   <cref />
   <creactive />
   <ccomputed />
+  <cwatch />
 
 </template>
 

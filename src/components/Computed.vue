@@ -14,3 +14,9 @@ const finalPrice = computed(() => price.value - (price.value * discount.value / 
     <p>Final Price: ${{ finalPrice }}</p>
   </div>
 </template>
+
+<style scoped>
+.read-the-docs {
+    color: #888;
+}
+</style>
