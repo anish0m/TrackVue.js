@@ -1,10 +1,19 @@
 <template>
-    <select v-model="selectedHouse">
-      <option value="Gryffindor">Gryffindor</option>
-      <option value="Slytherin">Slytherin</option>
-      <option value="Ravenclaw">Ravenclaw</option>
-      <option value="Hufflepuff">Hufflepuff</option>
-    </select>
+    <div>
+      <select v-model="selectedHouse">
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+        <option value="Hufflepuff">Hufflepuff</option>
+      </select>
+  
+      <!-- Default slot content for when no specific content is provided -->
+      <div v-if="$slots['house-message']">
+        <slot name="house-message">
+          <p>{{ selectedHouse }} - Welcome to your House!</p>
+        </slot>
+      </div>
+    </div>
   </template>
   
   <script setup>
