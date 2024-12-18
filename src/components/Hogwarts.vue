@@ -5,35 +5,50 @@
         @click="handleClick">
         Dumbledore
       </button>
-
-      <ChildComponent v-if="messageIndex > 0" :messages="messages.slice(0, messageIndex)" />
+  
+      <ChildComponent
+        v-if="messageIndex > 0"
+        :messages="messages.slice(0, messageIndex)"
+        @finished="handleFinished" 
+      />
     </div>
   </template>
   
   <script setup lang="ts">
-  import ChildComponent from './HarryAtHogwarts.vue'
+  import { ref } from 'vue';
+  import ChildComponent from './HarryAtHogwarts.vue';
   
   const messages = [
     'Here we treat everyone equally.',
     'Oh, hello there, Harry!',
-    'Ten points to Gryffindor for Harry being with us.'
+    'Ten points to Gryffindors for Harry being with us.'
   ];
   
-  let messageIndex = 0;
+  let messageIndex = ref(0);
   
   const handleClick = () => {
-    if (messageIndex === 0) {
+    if (messageIndex.value === 0) {
       console.log('Welcome to Hogwarts!');
-    } else if (messageIndex <= messages.length) {
-      console.log(messages[messageIndex - 1]);
+    } else if (messageIndex.value <= messages.length) {
+      console.log(messages[messageIndex.value - 1]);
     }
-    
-    messageIndex++;
-  }
+  
+    messageIndex.value++;
+  
+    // Check if we have reached the end and trigger the finished message
+    if (messageIndex.value > messages.length) {
+      console.log('Now, Prefects will lead you to your common rooms. Good night!');
+    }
+  };
+  
+  // Handle the event when child is finished
+  const handleFinished = () => {
+    // This is for flexibility in case any extra logic is needed
+  };
   </script>
   
   <style scoped>
-.my-button {
+  .my-button {
     background-color: #112438;
     color: #fff;
     border: none;
@@ -41,10 +56,10 @@
     padding: 10px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.my-button:hover {
+  }
+  
+  .my-button:hover {
     background-color: #1c4a6b;
-}
+  }
   </style>
   
