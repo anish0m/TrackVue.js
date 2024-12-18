@@ -10,6 +10,7 @@ import cref from './components/Ref.vue'
 import creactive from './components/Reactive.vue'
 import ccomputed from './components/Computed.vue'
 import cwatch from './components/Watch.vue'
+import MyButton from './components/MyButton.vue'
 </script>
 
 <template>
@@ -32,6 +33,7 @@ import cwatch from './components/Watch.vue'
   <creactive />
   <ccomputed />
   <cwatch />
+  <MyButton label="Platform 9 3/4" />
 
 </template>
 
