@@ -12,6 +12,7 @@ import ccomputed from './components/Computed.vue'
 import cwatch from './components/Watch.vue'
 import myButton from './components/MyButton.vue'
 import dumbledore from './components/Hogwarts.vue'
+import house from './components/House.vue'
 </script>
 
 <template>
@@ -36,6 +37,7 @@ import dumbledore from './components/Hogwarts.vue'
   <cwatch />
   <myButton label="Platform 9 3/4" />
   <dumbledore />
+  <house />
 
 </template>
 
