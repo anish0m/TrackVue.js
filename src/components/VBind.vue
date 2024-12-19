@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const imageURL = ref('https://i.pinimg.com/736x/82/18/e6/8218e646c894230908b799bd04470083.jpg')
+const imageURL = ref('https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Bat-signal_1989_film.jpg/220px-Bat-signal_1989_film.jpg')
 </script>
 
 <template>

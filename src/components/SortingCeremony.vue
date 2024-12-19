@@ -11,7 +11,10 @@ const imageURL = ref(hogwartsImage)
   <div id="app">
     <nav>
       <ul>
+        
         <li><RouterLink to="/hogwartspage">Hogwarts</RouterLink></li>
+        <li><RouterLink to="/hogwartspage/teachers">Teachers</RouterLink></li>
+        <li><RouterLink to="/hogwartspage/quidditch">Quidditch</RouterLink></li>
         <li><RouterLink to="/gryffindor">Gryffindor</RouterLink></li>
         <li><RouterLink to="/hufflepuff">Hufflepuff</RouterLink></li>
         <li><RouterLink to="/ravenclaw">Ravenclaw</RouterLink></li>
@@ -19,7 +22,10 @@ const imageURL = ref(hogwartsImage)
       </ul>
     </nav>
 
+    <router-view />
+
     <img :src="imageURL" alt="Hogwarts Dashboard Image" />
+
   </div>
 </template>
 

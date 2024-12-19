@@ -10,6 +10,10 @@ import Slytherin from '../components/Slytherin.vue'
 
 const routes = [
   {
+    path: '/',
+    redirect: '/home'
+  },
+  {
     path: '/home',
     name: 'Home',
     component: Home
@@ -27,7 +31,19 @@ const routes = [
   {
     path: '/hogwartspage',
     name: 'Hogwartspage',
-    component: p2proute
+    component: p2proute,
+    children: [
+      {
+        path: 'teachers',
+        name: 'Teachers',
+        component: () => import('../components/Teachers.vue') 
+      },
+      {
+        path: 'quidditch',
+        name: 'Quidditch',
+        component: () => import('../components/Quidditch.vue')
+      }
+    ]
   },
   {
     path: '/gryffindor',
