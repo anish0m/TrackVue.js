@@ -2,6 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Practice from '../components/Practice.vue'
+import p2proute from '../components/SortingCeremony.vue'
+import Gryffindor from '../components/Gryffindor.vue'
+import Hufflepuff from '../components/Hufflepuff.vue'
+import Ravenclaw from '../components/Ravenclaw.vue'
+import Slytherin from '../components/Slytherin.vue'
 
 const routes = [
   {
@@ -18,6 +23,31 @@ const routes = [
     path: '/practice',
     name: 'Practice',
     component: Practice
+  },
+  {
+    path: '/hogwartspage',
+    name: 'Hogwartspage',
+    component: p2proute
+  },
+  {
+    path: '/gryffindor',
+    name: 'Gryffindor',
+    component: Gryffindor
+  },
+  {
+    path: '/hufflepuff',
+    name: 'Hufflepuff',
+    component: Hufflepuff
+  },
+  {
+    path: '/ravenclaw',
+    name: 'Ravenclaw',
+    component: Ravenclaw
+  },
+  {
+    path: '/slytherin',
+    name: 'Slytherin',
+    component: Slytherin
   }
 ]
 
