@@ -7,7 +7,6 @@
         <option value="Hufflepuff">Hufflepuff</option>
       </select>
   
-      <!-- Default slot content for when no specific content is provided -->
       <div v-if="$slots['house-message']">
         <slot name="house-message">
           <p>{{ selectedHouse }} - Welcome to your House!</p>

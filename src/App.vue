@@ -1,18 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import directiveUsage from './components/DirectiveUsage.vue'
-import vBind from './components/VBind.vue'
-import vModel from './components/VModel.vue'
-import vCondition from './components/VConditions.vue'
-import vFor from './components/VFor.vue'
-import vOn from './components/VOn.vue'
-import cref from './components/Ref.vue'
-import creactive from './components/Reactive.vue'
-import ccomputed from './components/Computed.vue'
-import cwatch from './components/Watch.vue'
-import myButton from './components/MyButton.vue'
-import dumbledore from './components/Hogwarts.vue'
-import house from './components/House.vue'
+
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -23,22 +12,19 @@ import house from './components/House.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-  <directiveUsage message />
-  <vBind />
-  <vModel message />
-  <vCondition />
-  <vFor />
-  <vOn />
-  <cref />
-  <creactive />
-  <ccomputed />
-  <cwatch />
-  <myButton label="Platform 9 3/4" />
-  <dumbledore />
-  <house />
 
+    <nav>
+      <ul>
+        <li><RouterLink to="/home">Home</RouterLink></li>
+        <li><RouterLink to="/about">About</RouterLink></li>
+        <li><RouterLink to="/practice">Practice</RouterLink></li>
+      </ul>
+    </nav>
+
+    <RouterView />
+
+    <HelloWorld msg="Vite + Vue" />
+  </div>
 </template>
 
 <style scoped>
@@ -53,5 +39,24 @@ import house from './components/House.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+a.router-link-active {
+  font-weight: bold;
+  color: #42b883;
 }
 </style>

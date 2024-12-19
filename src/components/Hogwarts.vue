@@ -35,15 +35,12 @@
   
     messageIndex.value++;
   
-    // Check if we have reached the end and trigger the finished message
     if (messageIndex.value > messages.length) {
       console.log('Now, Prefects will lead you to your common rooms. Good night!');
     }
   };
   
-  // Handle the event when child is finished
   const handleFinished = () => {
-    // This is for flexibility in case any extra logic is needed
   };
   </script>
   
