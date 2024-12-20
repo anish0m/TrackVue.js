@@ -1,3 +1,7 @@
+import { useMainStore } from '../stores/mainStore'
+
+
+
 <script setup lang="ts">
 import directiveUsage from './DirectiveUsage.vue'
 import vBind from './VBind.vue'
@@ -12,6 +16,9 @@ import cwatch from './Watch.vue'
 import myButton from './MyButton.vue'
 import dumbledore from './Hogwarts.vue'
 import sortToHouse from './SortIntoHouse.vue'
+import { useMainStore } from '../stores/mainStore'
+
+const mainStore = useMainStore();
 
 </script>
 
@@ -30,6 +37,8 @@ import sortToHouse from './SortIntoHouse.vue'
     <myButton label="Platform 9 3/4" />
     <dumbledore />
     <sortToHouse />
+    <button @click="mainStore.count++">Counter</button>
+    <p>Current Count: {{ mainStore.count }}</p>
   </div>
 </template>
 
