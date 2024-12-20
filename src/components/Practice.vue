@@ -20,8 +20,12 @@ import { useMainStore } from '../stores/mainStore'
 
 const mainStore = useMainStore();
 
+const showCount = () => {
+  alert(mainStore.showCount())
+}
+
 const showDoubledCount = () => {
-  alert(`Doubled Count: ${mainStore.doubledCount}`);
+  alert(`Doubled Count: ${mainStore.doubledCount}`)
 }
 </script>
 
@@ -42,6 +46,7 @@ const showDoubledCount = () => {
     <sortToHouse />
     <button @click="mainStore.count++">Counter</button>
     <button @click="showDoubledCount()">Double it!</button>
+    <button @click="showCount()">Show</button>
     <p>
       Current Count: {{ mainStore.count }} 
     </p>
